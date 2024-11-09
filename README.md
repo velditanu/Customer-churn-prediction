@@ -8,8 +8,6 @@
 - [Results and Evaluation](#results-and-evaluation)
 - [Key Insights and Business Recommendations](#key-insights-and-business-recommendations)
 - [How to Use / Run the Project](#how-to-use--run-the-project)
-- [Future Work](#future-work)
-- [About Me](#about-me)
 
 ## Project Overview
 
