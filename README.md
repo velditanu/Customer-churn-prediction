@@ -35,10 +35,42 @@ During EDA, we examined relationships between customer demographics, account det
 - **Contract Type**: Customers on month-to-month contracts tend to have higher churn rates.
 - **Tenure**: Customers with longer tenures tend to churn less frequently.
 
-**Key Visualizations**:
-1. **Distribution of Tenure**: Shows the spread of customer tenure and its relationship to churn.
-2. **Churn Rates by Contract Type**: Visualizes how different contract types affect churn.
-3. **Correlation Heatmap**: Shows correlations between numeric features like tenure, monthly charges, and churn.
+### Key Visualizations
+
+1. **Churn Rate by Age Group**:
+   This bar plot shows the churn rate across different age groups.
+
+   ![Churn Rate by Age Group](images/Churn%20by%20age.png)
+
+2. **Churn Rate by Contract Type**:
+   This bar plot shows the churn rate for each contract type.
+
+   ![Churn Rate by Contract Type](images/Churn%20by%20Contract%20type.png)
+
+3. **Distribution of Monthly Charges by Churn Status**:
+   This KDE plot shows the distribution of monthly charges for churned and non-churned customers.
+
+   ![Monthly Charges Distribution by Churn Status](images/Monthly%20charges.png)
+
+4. **Distribution of Tenure by Churn Status**:
+   This KDE plot shows the distribution of tenure for churned vs. non-churned customers.
+
+   ![Tenure Distribution by Churn Status](images/Tenure.png)
+
+5. **Distribution of Total Charges by Churn Status**:
+   This KDE plot shows the distribution of total charges for churned and non-churned customers.
+
+   ![Total Charges Distribution by Churn Status](images/Charges.png)
+
+6. **ROC Curve**:
+   The ROC curve shows the trade-off between true positive rate and false positive rate for the model.
+
+   ![ROC Curve](images/ROC_Curve.png)
+
+7. **Feature Importance**:
+   This bar plot shows the importance of different features in predicting churn, as calculated by the Random Forest model.
+
+   ![Feature Importance](images/Feature_Importance.png)
 
 ## Modeling Approach
 
@@ -62,12 +94,6 @@ We trained multiple models to predict churn:
 
 **Best Model**: Based on AUC and F1 score, the Random Forest model performed best in predicting customer churn.
 
-**ROC Curve**:
-![ROC Curve](images/ROC_Curve.png)
-
-**Feature Importance**:
-![Feature Importance](images/Feature_Importance.png)
-
 ## Key Insights and Business Recommendations
 
 ### Key Insights
@@ -88,3 +114,4 @@ To run this project locally:
    ```bash
    git clone https://github.com/velditanu/Customer-churn-prediction.git
    cd Customer-churn-prediction
+
